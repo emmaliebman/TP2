@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-top: 0;
+    color: rgb(255, 201, 212);
+}
+
+h2 {
+    text-align: center;
+}
+
+
+header {
+    background-color: rgb(41, 39, 44);
+}
+
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-weight: 200;
+}
+
+nav {
+    color: rgb(41, 39, 44);
+    width: 200vw;
+    height: 18.83vh;
+    background-color: rgb(255, 201, 212);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    top: 19vh;
+    background-color: rgb(255, 201, 212);
+    width: 100vw;
+    padding: 2vw;
+    min-height: 30vh;
+}
+
+nav div {
+    display: flex;
+    width: 24.11%;
+    justify-content: space-between;
+}
+
+
+
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 100vh;
+}
+
+main div {
+    width: 45.83%;
+}
+
+div img,
+video {
+    width: 100%;
+}
+
+
+header {
+    height: 45.30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.logo-container img {
+    width: 150px;
+    height: 150px;
+    animation-name: rotateLogo;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    margin: 0;
+    font-size: 40px;
+}
+
+
+
+header h3 {
+    text-transform: uppercase;
+    color: rgb(255, 201, 212);
+    letter-spacing: 5px;
+}
+
+header p {
+    font-size: 15px;
+    color: rgb(255, 201, 212);
+}
+
+
+header a {
+    text-transform: capitalize;
+    color: rgb(255, 201, 212);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: transform 0s;
+}
+
+nav a {
+    text-transform: capitalize;
+    color: rgb(41, 39, 44);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: transform 0s;
+}
+
+nav a:hover {
+    color: white;
+    transform: scale(0.9);
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.1);
+
+}
+
+nav span {
+    display: none;
+}
+
+.icon-menu::before {
+    color: rgb(41, 39, 44);
+    font-size: 4vw;
+}
+
+span.icon-menu:hover {
+    cursor: pointer;
+}
+
+
+.lightboxOverlay {
+    background-color: rgb(41, 39, 44);
+}
+
+
+
+@media(max-width: 1024px) {
+
+    nav div {
+        width: 50%;
+    }
+
+    header,
+    section {
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    nav div {
+        display: none;
+    }
+
+    nav span {
+        display: inline;
+    }
+
+    section div {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+}
+
+@keyframes rotateLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 201, 212);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
